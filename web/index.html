@@ -1,0 +1,209 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>基于中国当代小说中的苏南乡村可视化平台</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/zzsc.css" />
+		<script type="text/javascript" src="../js/echarts-4.3.0.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.slides.js"></script>
+		<script type="text/javascript" src="../js/slider.js"></script>
+		<script type="text/javascript" src="../js/area.js"></script>
+		<script type="text/javascript" src="../js/modal.js"></script>
+		<script type="text/javascript" src="../js/maps.js"></script>
+		<script type="text/javascript" src="../js/google.js"></script>
+		<script type="text/javascript" src="../js/header.js"></script>
+		<script type="text/javascript" src="../js/top.js"></script>
+		<script type="text/javascript" src="../js/scatter.js"></script>
+	</head>
+	<body>
+		<div class="header-page"></div>
+		<div class="content">
+			<div class="slider_box" id="slider_name">
+				<div class="mask">
+				</div>
+				<ul class="slider_con">
+					<li class="slider_panel"><a href="#" class="f_l">
+							<img src="../images/slidepic/1.jpg" /></a></li>
+					<li class="slider_panel"><a href="#" class="f_l">
+							<img src="../images/slidepic/2.jpg" /></a></li>
+					<li class="slider_panel"><a href="#" class="f_l">
+							<img src="../images/slidepic/3.jpg" /></a></li>
+					<li class="slider_panel"><a href="#" class="f_l">
+							<img src="../images/slidepic/4.jpg" /></a></li>
+					<li class="slider_panel"><a href="#" class="f_l">
+							<img src="../images/slidepic/5.jpg" /></a></li>
+				</ul>
+				<div class="slider_intro">
+					<h3>叶兆言《花影》</h3>
+					<div>
+						<p>父死兄瘫后，妤小姐成了甄家大院的主人，她一心追回已逝的青春，寻求从不曾得到过的自由和欢乐。然而，封建家庭对她身心的毒害难以祛除，父兄的阴影亦时刻将她包围。<br />
+							&nbsp;&nbsp;&nbsp;&nbsp;最终，她以青春、激情和生命为代价，向黑暗的封建礼教作出了自己的抗争。</p>
+					</div>
+				</div>
+				<div class="slider_intro">
+					<h3>叶弥“白菊湾花码头镇”系列小说</h3>
+					<div>
+						<p>叶弥将笔墨聚焦于新世纪的江南乡村,勾勒了一幅幅当代乡村的生存图景，作品以“我——一个来到乡村生活的城市女性知识分子的视角展开在江南水乡小村镇发生的各种故事。</p>
+					</div>
+				</div>
+				<div class="slider_intro">
+					<h3>苏童《米》</h3>
+					<div>
+						<p>民以食为天，苏童的一部《米》讲述了主人翁五龙摆脱饥饿贫困的人生历程，伴着一个家族三代人的颓败，乡村与都市的纠缠与冲突，随着食欲的满足而又落入性欲的陷阱。五龙为“米”而来，也终于死于回乡火车的米堆上。
+						</p>
+					</div>
+				</div>
+				<div class="slider_intro">
+					<h3>范小青《赤脚医生万泉和》</h3>
+					<div>
+						<p>万泉和没正式学过医，当医生勉为其难，虽先后和几名医生配合行医，但他们先后都走了，最后剩下他一人。在贫困落后的后窑村，如果他不当医生，还会有谁来关心农民的疾病？</p>
+					</div>
+				</div>
+				<div class="slider_intro">
+					<h3>格非“江南三部曲”之《山河入梦》</h3>
+					<div>
+						<p>2015年，《江南三部曲》获第九届茅盾文学奖。 故事发生在1952年至1962年间的江南农村，讲述了工业文明的照耀下，那个年代狂飙突进似的乌托邦实验。小说的最后一章尤其精彩，充满了悬疑、神秘的气氛，耀眼的阳光背后往往隐藏着更深的阴影。
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<br />
+			<div id="jiangSuMap">
+				<h2>江苏地图视域下当代苏南作家笔下的乡村</h2>
+				<img id="jiangSu" src="../images/jiangSu.png" width="800px" usemap="#jiangsu" />
+				<map id="jiangsu" name="jiangsu">
+					<area id="suzhou" shape="poly"
+						coords="1557,2050,1845,1871,1827,1742,1746,1649,1773,1622,1922,1638,1977,1743,2055,1758,2173,1867,1808,2256,1595,2123,1557,2050" />
+					<area id="wuxi" shape="poly"
+						coords="1557,2050,1845,1871,1827,1742,1746,1649,1600,1657,1595,1727,1670,1706,1611,1957,1601,1884,1439,1838,1390,1981,1416,2082,1557,2050" />
+					<area id="changzhou" shape="poly"
+						coords="1600,1657,1595,1727,1670,1706,1611,1957,1601,1884,1439,1838,1390,1981,1416,2082,1249,1987,1242,1889,1269,1825,1307,1798,1313,1708,1418,1713,1483,1774,1513,1610,1600,1657" />
+					<area id="zhenjiang" shape="poly"
+						coords="1269,1825,1307,1798,1313,1708,1418,1713,1483,1774,1513,1610,1600,1657,1506,1481,1270,1529,1189,1588,1191,1746,1269,1825" />
+					<area id="nanjing" shape="poly"
+						coords="1249,1987,1242,1889,1269,1825,1191,1746,1189,1588,1270,1529,1185,1512,1187,1386,993,1344,1048,1476,904,1660,1123,1893,1063,2019,1249,1987" />
+				</map>
+				<div id="suzhouModal" class="modal">
+					<div class="modal-content">
+						<div style="text-align-last: center;margin: 0,auto;">
+							<p class="author">叶弥</p>
+						</div>
+
+						<a href="../articles/yemi_baiju.html">“白菊湾花码头镇”系列作品</a>
+						<p class="author">苏童</p>
+						<a href="../articles/sutong_sangyuan_kuangben.html">《桑园留念》<br />《狂奔》</a><br />
+						<a href="../articles/sutong_mi_chuiyangliu.html">《米》<br />《垂杨柳》</a><br />
+						<a href="../articles/sutong_taowang.html">《1934年的逃亡》</a><br />
+						<a href="../articles/sutong_huangqueji.html">《黄雀记》</a><br />
+						<a href="../articles/sutong_hean.html">《河岸》</a><br />
+						<a href="../articles/sutong_baisha.html">《白沙》</a><br />
+						<a href="../articles/sutong_shiba.html">《十八相送》</a><br />
+						<p class="author">范小青</p>
+						<a href="../articles/fanxiaoqing_bairi.html">《百日阳光》</a><br />
+						<a href="../articles/fanxiaoqing_chengxiang_kudang.html">《城乡简史》<br />《裤裆巷风流记》</a><br />
+						<a href="../articles/fanxiaoqing_chijiao.html">《赤脚医生万泉和》</a><br />
+					</div>
+				</div>
+				<!-- <div id="wuxiModal" class="modal">
+					<div class="modal-content">
+						<p>#</p>
+					</div>
+				</div> -->
+				<div id="changzhouModal" class="modal">
+					<div class="modal-content">
+						<p class="author">高晓声</p>
+						<a href="../articles/gaoxiaosheng_jingxuanji.html">《高晓声精选集》</a><br />
+						<a href="../articles/gaoxiaosheng_qingtian.html">《青天在上》</a><br />
+					</div>
+				</div>
+				<div id="zhenjiangModal" class="modal">
+					<div class="modal-content">
+						<p class="author">格非</p>
+						<a href="../articles/gefei_renmian.html">《人面桃花》</a><br />
+						<a href="../articles/gefei_shanhe.html">《山河入梦》</a><br />
+						<a href="../articles/gefei_chunjin.html">《春尽江南》</a><br />
+						<a href="../articles/gefei_wangchunfeng.html">《望春风》</a><br />
+					</div>
+				</div>
+				<div id="nanjingModal" class="modal">
+					<div class="modal-content">
+						<p class="author">叶兆言</p>
+						<a href="../articles/yezhaoyan_huaying.html">《花影》</a><br />
+						<a
+							href="../articles/yezhaoyan_zhuangyuan_banbian_zhuiyue.html">《状元境》<br />《半边营》<br />《追月楼》</a><br />
+						<a
+							href="../articles/yezhaoyan_shizipu__.html">《十字铺》<br />《枣树的故事》<br />《悬挂的绿苹果》<br />《炮山鸡》</a><br />
+						<a href="../articles/yezhaoyan_aiqing.html">《一九三七年的爱情》</a><br />
+					</div>
+				</div>
+			</div>
+
+			<br />
+			<br />
+			<div id="suNanMap">
+				<h2>实地调研中的苏南乡村现状</h2>
+				<img id="suNan" src="../images/suNan.png" width="800px" usemap="#sunan" />
+				<map id="sunan" name="sunan">
+					<area id="su" shape="poly"
+						coords="658,721,945,528,915,394,848,319,1022,311,1081,418,1155,425,1270,536,905,919,658,721" />
+					<area id="xi" shape="poly"
+						coords="658,721,945,528,915,394,848,319,700,328,696,396,769,376,712,560,543,508,474,740,658,721" />
+				</map>
+				<div id="suModal" class="modal">
+					<div class="modal-content">
+						<a href="../research/tonglizhen.html">同里镇</a>
+					</div>
+				</div>
+				<div id="xiModal" class="modal">
+					<div class="modal-content">
+						<a href="../research/changjingzhen.html">长泾镇：</a><br />
+						<a href="../research/changjingzhen.html#jingnan">&nbsp;&nbsp;泾南村</a><br />
+						<a href="../research/changjingzhen.html#jingdong">&nbsp;&nbsp;泾东村</a><br />
+						<a href="../research/changjingzhen.html#changdong">&nbsp;&nbsp;长东村</a><br />
+						<a href="../research/changjingzhen.html#huayuan">&nbsp;&nbsp;花园村</a><br />
+
+					</div>
+				</div>
+			</div>
+			
+			<br />
+			<br />
+			<h2>乡村形象</h2>
+			<div id="scatter" style="height: 500px;"></div>
+			
+			<div id="conclusion">
+				<h2>结论对比</h2>
+				<table style="text-align: center;">
+					<tr>
+						<td><img src="../images/scenery/tongli4.jpg" height="150px"/></td>
+						<td><img src="../images/scenery/tongli8.jpg" height="150px"/></td>
+						<td><img src="../images/scenery/tongli3.jpg" height="150px"/></td>
+						<td><img src="../images/scenery/tongli6.jpg" height="150px"/></td>
+						<td><img src="../images/scenery/tongli9.jpg" height="150px"/></td>
+					</tr>
+					<tr>
+						<td><a href="../conclusion/jingquhua.html">乡村景区化</a></td>
+						<td><a href="../conclusion/jingjifazhan.html">乡村经济发展</a></td>
+						<td><a href="../conclusion/xingbieguannian.html">乡村性别观念</a></td>
+						<td><a href="../conclusion/minshengbaozhang.html">乡村民生保障</a></td>
+						<td><a href="../conclusion/chuantongminsu.html">乡村传统民俗</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<br />
+			<br />
+			<div id="introduce">
+				<h2>项目介绍</h2>
+				<p>乡土文学乡村形象与当代乡村现状调查对比研究——以苏南地区为例</p>
+				<p>项目摘要：本项目以苏南乡土文学乡村形象与当代苏南乡村的实际和发展在乡村景区化、乡村经济发展、乡村性别观念、乡村民生保障、乡村传统民俗这五个方面的吻合度为中心，从对比中分析乡土文学与乡村现状的相互作用，以期寻求二者更好的发展。</p>
+				<p>项目成员：沃熠娴 孙晴 邱章颖 丁晴鹤</p>
+			</div>
+		</div>
+	</body>
+</html>
